@@ -43,6 +43,6 @@ class Test{
         RussianRates rates = new RussianRates("https://cbr.ru/currency_base/daily/");
         HashMap<String, String> ratesList = rates.getRates();
         for(Map.Entry<String, String> entry: ratesList.entrySet())
-            System.out.println(entry);
+            System.out.println(entry.toString().replace("=", "  "));
     }
 }
